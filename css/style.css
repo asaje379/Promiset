@@ -1,0 +1,30 @@
+.select-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    border: dotted 0.1px #aaa;
+    padding: 0;
+    box-shadow: 0 0 10px 0 #333;
+}
+
+.select-group select {
+    background-color: #fff;
+    border: none;
+    border-bottom: solid 0.3px #999;
+    height: 40px;
+    width: 100%;
+}
+
+.select-group select:hover {
+    outline: none;
+}
+
+.select-group label {
+    padding: 5px 0;
+    font-style: italic;
+    width: 100%;
+    background-color: chocolate;
+    color: #fff;
+    text-align: center;
+}

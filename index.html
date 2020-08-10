@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="root">
+    </div>
+
+    <script src="./http/ajax.js"></script>
+    <script src="./components/base.component.js"></script>
+    <script src="./components/customSelect.component.js"></script>
+    <script>
+        let c = new CustomSelect('arrivee', 'Ville d\'arrivee', 'arrivee', 'select-group', [
+            {value: '1', text: 'Ville 1'},
+            {value: '2', text: 'Ville 2'},
+            {value: '3', text: 'Ville 3'},
+        ]);
+        render('root', c.render());
+
+        // setInterval(() => {
+        //     c.labelText = 'Ville de depart';
+        //     c.name = 'depart';
+        //     render('root', c.render());
+        // }, 3000);
+    </script>
+</body>
+
+</html>
